@@ -19,9 +19,9 @@ spec:
         name: python-app
         volumeMounts:
         - mountPath: /var/python-app
-          name: python-data-mount
+          name: python-data
       volumes:
-      - name: python-data-mount
+      - name: python-data
         persistentVolumeClaim:
           claimName: python-data
         
